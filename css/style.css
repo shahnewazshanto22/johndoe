@@ -1,0 +1,142 @@
+
+.hero__main__shape {
+    position: relative;
+}
+
+.hero__top__shape {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #E74C3C;
+    animation: shape__animation 5s infinite linear;
+}
+
+.hero__bottom__shape {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #E74C3C;
+    animation: shape__animation 5s infinite linear;
+}
+
+@keyframes shape__animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.hero__image {
+    animation: hero__img__animation 2s ease infinite;
+}
+
+@keyframes hero__img__animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.6);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 20px transparent;
+    }
+    
+}
+
+.linkedin__btn:hover {
+    transition: all linear .5s;
+    transform: rotate(35deg);
+}
+
+.github__btn {
+    transition: all linear .5s;
+    transform: rotate(35deg);
+}
+
+.github__btn:hover {
+    transition: all linear .5s;
+    transform: rotate(0deg);
+}
+
+
+
+
+/* about__education */
+.about__experience:hover .abu__experience__text span {
+    color: white;
+}
+
+.about__experience:hover .abu__experience__text p {
+    color: white;
+}
+
+.about__education:hover .abu__education__text p {
+    color: white
+}
+
+.about__education:hover .abu__education__text span {
+    color: white
+}
+
+.frontend__wrapper:hover h3 {
+    color: black;
+}
+
+.frontend__items:nth-child(even) {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) { 
+    .frontend__items:nth-child(even) {
+        padding-left: 0px;
+    }
+ }
+
+.frontend__wrapper:hover .frontend__items h4 {
+    color: wheat;
+}
+.frontend__wrapper:hover .frontend__items span {
+    color: black;
+}
+
+.backend__wrapper:hover h3 {
+    color: black;
+}
+
+.backend__items:nth-child(even) {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) { 
+    .backend__items:nth-child(even) {
+        padding-left: 0px;
+    }
+ }
+
+
+.backend__wrapper:hover .backend__items h4 {
+    color: wheat;
+}
+.backend__wrapper:hover .backend__items span {
+    color: black;
+}
+
+.header h5 span {
+    animation: header__ann 2s ease infinite;
+}
+
+@keyframes header__ann {
+    0% {
+        box-shadow: 0 0 0 0 green;
+    }
+    
+    100% {
+        box-shadow: 0 0 0 15px transparent;
+    }
+}

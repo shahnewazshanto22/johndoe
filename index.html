@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#000000",
+                        gray: "#555555",
+                        fafafa: "#FAFAFA",
+                        white: "#ffffff",
+                    },
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ================ Navbar area start ============ -->
+    <nav id="navbar" class="bg-white h-20 top-0 right-0 left-0">
+        <div class="flex justify-between w-full lg:max-w-5xl max-w-7xl mx-auto h-20 items-center">
+            <a href="#navbar">
+                <h3 class="font-poppins font-normal text-black text-xl mt-4 sm:mt-5 md:text-4xl cursor-pointer">John Doe</h3>
+            </a>
+            <ul class="flex font-poppins font-normal text-black text-sm sm:text-2xl gap-3 sm:gap-6 pt-5">
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a href="#about">About</a>
+                </li>
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a
+                        href="#experience">Experience</a>
+                </li>
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a
+                        href="#projects">Projects</a>
+                </li>
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a
+                        href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ================ Navbar area end ============ -->
+
+    <!-- ================ Hero area start ============ -->
+    <section class="py-8 md:py-16 bg-white">
+        <div class="hero__main__shape w-full lg:max-w-5xl max-w-7xl mx-auto md:flex lg:flex xl:flex 2xl:flex flex flex-col md:flex-row md:justify-center items-center gap-20">
+            <div class="hero__top__shape"></div>
+            <div class="hero__bottom__shape"></div>
+            <div class="w-[200px] md:w-[340px] lg:w[390px] xl:w[420px] 2xl:w[450px] hero__img__shape">
+                <img class="hero__image bg-cover" src="images/JohnDoe.png" alt="JohnDoe">
+            </div>
+            <div class="text-center">
+                <span class="font-semibold text-gray font-poppins text-lg">Hello, I'm</span>
+                <h1 class="font-medium text-black font-poppins text-2xl md:text-4xl lg:text-6xl md:py-2 lg:py-3">John Doe</h1>
+                <h3 class="font-semibold text-gray font-poppins text-lg md:text-[28px] lg:text-3xl mb-6">Frontend Developer<h3>
+                        <div class=" flex justify-between gap-6">
+                            <button type="button"
+                                class=" w-[138px] h-[50px] md:w-[145px] md:h-[55px] lg:w-[160px] xl:w-[180px] text-center leading-[46px] md:leading-[50px] bg-red-400 border-2 border-red-400 rounded-full text-white font-poppins text-base lg:text-lg font-medium hover:bg-opacity-0 hover:borde-2 hover:border-black hover:text-red-400">Download
+                                CV</button>
+                            <button type="button"
+                                class=" w-[138px] h-[50px] md:w-[145px] md:h-[55px] lg:w-[160px] xl:w-[180px] text-center leading-[46px] md:leading-[50px] border-2 border-red-400 rounded-full text-black font-poppins font-medium text-base lg:text-lg hover:bg-red-400 hover:text-white hover:border-2 ">Contact
+                                Info</button>
+                        </div>
+                        <div class="flex justify-center gap-8 mt-9">
+                            <a href="#"><img class="linkedin__btn w-8 md:w-9 lg:w-10" src="images/linkedin.png" alt="linkedin"></a>
+                            <a href="#"><img class="github__btn w-8 md:w-9 lg:w-10" src="images/github.png" alt="github"></a>
+                        </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ Hero area end ============ -->
+
+    <!-- ================ About area start ============ -->
+    <section id="about" class="md:py-5 py-10 bg-white">
+        <div class="w-full lg:max-w-5xl max-w-7xl mx-auto">
+            <div class="header text-center">
+                <h5 class="text-gray font-poppins font-normal text-base md:text-lg"><span class="w-4 h-4 rounded-full mr-3 bg-red-400 inline-block"></span>Get To Know More</h5>
+                <h2 class="text-black font-poppins font-semibold text-3xl md:text-4xl lg:text-5xl mt-2 lg:mt-3">About Me</h2>
+            </div>
+            <div class="about__text__img__wrapper flex flex-col lg:flex-row justify-between items-center gap-14 mt-10">
+                <div class="about__img w-[70%] md:ml-2 md:w-[35%] lg:w-[40%]">
+                    <img class="w-full rounded-3xl" src="images/about-pic.png" alt="about-pic">
+                </div>
+                <div class="about__text  flex flex-col gap-6 md:flex-row w-[100%]  justify-between flex-wrap">
+                    <div class="about__experience hover:bg-red-400 cursor-pointer hover:border-2 hover:border-black text-center p-5 border-2 border-red-300 w-[100%] md:w-[47%] rounded-3xl">
+                        <div class="abu__experience___img flex justify-center">
+                            <img src="images/experience.png" alt="experience" class="w-10">
+                        </div>
+                        <div class="abu__experience__text">
+                            <h3 class="text-black font-poppins font-semibold text-2xl mt-3 mb-2">Experience</h3>
+                            <span class="font-poppins text-gray text-base md:text-lg">2+ years</span>
+                            <p class="font-poppins text-gray text-base md:text-lg">Frontend Development</p>
+                        </div>
+                    </div>
+                    <div
+                        class="about__education hover:bg-red-400 cursor-pointer hover:border-2 hover:border-black text-center p-5 border-2 border-red-300 w-[100%] md:w-[47%] rounded-3xl">
+                        <div class="abu__education___img flex justify-center">
+                            <img src="images/education.png" alt="education" class="w-10">
+                        </div>
+                        <div class="abu__education__text">
+                            <h3 class="text-black font-poppins font-semibold text-2xl mt-3 mb-2">Education</h3>
+                            <span class="font-poppins text-gray text-base lg:text-lg">B.Sc. Bachelors Degree</span>
+                            <p class="font-poppins text-gray text-base lg:text-lg">M.Sc. Masters Degree</p>
+                        </div>
+                    </div>
+                    <div class="w-full mt-7 font-poppins text-gray text-base text-justify lg:text-lg px-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum,
+                            rem, dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime facere minus
+                            sint delectus velit in eos quo officiis explicabo deleniti dignissimos. Eligendi illum
+                            libero dolorum cum laboriosam corrupti quidem, reiciendis ea magnam? Nulla, impedit fuga!
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ================ About area end ============ -->
+
+    <!-- ================ Experience area start ============ -->
+    <section id="experience" class=" py-5 md:py-10 bg-white">
+        <div class="w-full lg:max-w-5xl max-w-7xl mx-auto ">
+            <div class="header text-center">
+                <h5 class="text-gray font-poppins font-normal text-base md:text-lg"><span class="w-4 h-4 rounded-full mr-3 bg-red-400 inline-block"></span>Explore My</h5>
+                <h2 class="text-black font-poppins font-semibold text-3xl md:text-4xl lg:text-5xl mt-2 lg:mt-3 mb-10">Experience</h2>
+            </div>
+
+            <div class="experience__wrapper flex flex-col md:flex-row gap-7">
+                <div class="frontend__wrapper w-screen md:w-1/2 border-2 border-red-300 rounded-3xl p-3 md:p-5 lg:p-8 hover:border-2 hover:border-black cursor-pointer hover:bg-red-400">
+                    <h3 class="text-gray font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-center md-3 md:md-4 lg:mb-5">Frontend Development</h3>
+                    <div class="flex flex-wrap justify-evenly">
+                        <div class="frontend__items md:flex-row w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">HTML</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="frontend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">CSS</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="frontend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">SASS</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="frontend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">Javascript</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Basic</span>
+                            </div>
+                        </div>
+                        <div class="frontend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">TypeScript</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Basic</span>
+                            </div>
+                        </div>
+                        <div class="frontend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">Material UI</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="backend__wrapper w-screen md:w-1/2 border-2 border-red-300 rounded-3xl p-3 md:p-5 lg:p-8 hover:border-2 hover:border-black cursor-pointer hover:bg-red-400">
+                    <h3 class="text-gray font-poppins font-semibold md:text-2xl lg:text-3xl text-center md-3 md:md-4 lg:mb-5 text-xl">Backend Developer</h3>
+                    <div class="flex flex-wrap">
+                        <div class="backend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">Git & Github</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="backend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">Node JS</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="backend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">Python</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="backend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">Express JS</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="backend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">MongoDB</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="backend__items w-1/2 flex gap-1 sm:gap-5 mt-7">
+                            <div>
+                                <img src="images/checkmark.png" alt="checkmark" class="w-6 sm:w-8 md:w-6 lg:w-8">
+                            </div>
+                            <div>
+                                <h4 class="text-black font-poppins font-medium text-lg sm:text-2xl md:text-xl lg:text-2xl">MySQL</h4>
+                                <span class="text-gray font-poppins font-normal text-lg">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ Experience area end ============ -->
+
+    <!-- ================ Projects area start ============ -->
+    <section id="projects" class="py-10">
+        <div class="w-full lg:max-w-5xl max-w-7xl mx-auto">
+            <div class="header text-center">
+                <h5 class="text-gray font-poppins font-normal text-base md:text-lg"><span class="w-4 h-4 rounded-full mr-3 bg-red-400 inline-block"></span>Browse My Recent</h5>
+                <h2 class="text-black font-poppins font-semibold text-3xl md:text-4xl lg:text-5xl mt-2 lg:mt-3 mb-10">Projects</h2>
+            </div>
+            <div class="project__item__wrapper flex flex-wrap gap-7">
+                <div class="project__items__one border-2 border-red-300 hover:border-2 hover:border-black rounded-3xl py-7 px-7 md:px-10 xl:px-5 bg-fafafa w-full md:w-[48%] xl:w-[30%]">
+                    <img class="rounded-3xl w-full" src="images/project-1.png" alt="project-1">
+                    <h3 class="text-black font-poppins font-semibold text-xl sm:text-2xl md:text-2xl lg:text-3xl my-7 text-center">Project One</h3>
+                    <div class="flex gap-7 justify-center">
+                        <a href="#"
+                            class="bg-red-400 border-2 border-red-400  w-[138px] h-[50px] md:w-[145px] md:h-[55px] text-center leading-[46px] sm:h-[50px] sm:leading-[46px] md:leading-[50px] rounded-full text-white font-poppins font-medium hover:bg-opacity-0 hover:text-black hover-border-2 hover:border-black text-sm sm:text-base">Github</a>
+                        <a href="#"
+                            class=" border-2 border-red-400 w-[138px] h-[50px] md:w-[145px] md:h-[55px] text-center leading-[46px] sm:h-[50px] sm:leading-[46px] md:leading-[50px] rounded-full   text-black font-poppins font-medium hover:bg-red-400 hover:text-white text-sm sm:text-base">Live
+                            Demo</a>
+                    </div>
+                </div>
+                <div class="project__items__two border-2 border-red-300  hover:border-2 hover:border-black rounded-3xl py-7 px-7 md:px-10 xl:px-5 bg-fafafa w-full md:w-[48%] xl:w-[30%]">
+                    <img class="rounded-3xl w-full" src="images/project-2.png" alt="project-2">
+                    <h3 class="text-black font-poppins font-semibold text-xl sm:text-2xl md:text-2xl lg:text-3xl my-7 text-center">Project Two</h3>
+                    <div class="flex gap-7 justify-center">
+                        <a href="#"
+                            class="bg-red-400 border-2 border-red-400 w-[138px] h-[50px] md:w-[145px] md:h-[55px] text-center leading-[46px] sm:h-[50px] sm:leading-[46px] md:leading-[50px] rounded-full text-white font-poppins font-medium hover:bg-opacity-0 hover:text-black hover-border-2 hover:border-black text-sm sm:text-base">Github</a>
+                        <a href="#"
+                            class=" border-2 border-red-400 w-[138px] h-[50px] md:w-[145px] md:h-[55px] text-center leading-[50px] sm:h-[50px] sm:leading-[46px] md:leading-[50px] rounded-full   text-black font-poppins font-medium hover:bg-red-400 hover:text-white text-sm sm:text-base">Live
+                            Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project__items__three mt-3 md:mt-8 xl:mt-0 border-2 border-red-300  hover:border-2 hover:border-black rounded-3xl py-7 px-7 md:px-10 lg:px-16 bg-fafafa w-full md:w-[48%] lg:w-full xl:w-[30%] xl:py-7 xl:px-5">
+                    <img class="rounded-3xl w-full" src="images/project-3.png" alt="project-3">
+                    <h3 class="text-black font-poppins font-semibold text-xl sm:text-2xl md:text-2xl lg:text-3xl my-7 text-center">Project Three</h3>
+                    <div class="flex gap-7 justify-center">
+                        <a href="#"
+                            class="bg-red-400 border-2 border-red-400 w-[138px] h-[50px] sm:h-[50px] sm:leading-[46px] md:w-[145px] md:h-[55px] text-center leading-[46px] md:leading-[50px] rounded-full text-white font-poppins font-medium hover:bg-opacity-0 hover:text-black hover-border-2 hover:border-black text-sm sm:text-base">Github</a>
+                        <a href="#"
+                            class=" border-2 border-red-400 w-[138px] h-[50px] md:w-[145px] sm:h-[50px] sm:leading-[46px] md:h-[55px] text-center leading-[46px] md:leading-[50px] rounded-full   text-black font-poppins font-medium hover:bg-red-400 hover:text-white text-sm sm:text-base">Live
+                            Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ Projects area end ============ -->
+
+    <!-- ================ Footer area start ============ -->
+    <section id="contact" class=" py-4 sm:py-7 md:py-10">
+        <div class="w-full lg:max-w-5xl max-w-7xl mx-auto">
+            <div class="header text-center">
+                <h5 class="text-gray font-poppins font-normal text-base md:text-lg"><span class="w-4 h-4 rounded-full mr-3 bg-red-400 inline-block"></span>Get in Touch</h5>
+                <h2 class="text-black font-poppins font-semibold text-3xl md:text-4xl lg:text-5xl mt-2 lg:mt-3 mb-10">Contact Me</h2>
+            </div>
+
+            <div class="contact__socail flex justify-center gap-9 md:py-4 md:px-10 px-4 py-3 border-2 border-red-300 w-full md:w-1/2 mx-auto rounded-full mb-10">
+                <div class="contact__email flex items-center md:gap-2 gap-2">
+                    <img class=" md:w-9 md:h-9 w-7 h-7" src="images/email.png" alt="email">
+                    <a href="mailto:example@gmail.com"
+                        class="font-poppains font-semibold text-base sm:text-lg md:text-xl text-gray hover:underline hover:underline-offset-[14px]">example@gmail.com</a>
+                </div>
+                <div class="contact__linkedin flex items-center md:gap-2 gap-2">
+                    <img class="md:w-7  md:h-7 lg:w-7 lg:h-7 w-5 h-5" src="images/linkedin.png" alt="linkedin">
+                    <a href="#"
+                        class="font-poppains font-semibold text-base sm:text-lg md:text-xl text-gray hover:underline hover:underline-offset-[14px]">Linkedin</a>
+                </div>
+            </div>
+
+            <ul class="flex justify-center mx-auto font-poppins font-normal text-black text-base sm:text-2xl gap-3 sm:gap-9 pt-0 sm:pt-5">
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a href="#about">About</a>
+                </li>
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a
+                        href="#experience">Experience</a>
+                </li>
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a
+                        href="#projects">Projects</a>
+                </li>
+                <li class="hover:text-red-300 hover:underline hover:underline-offset-[14px]"><a
+                        href="#contact">Contact</a>
+                </li>
+            </ul>
+            <span class=" flex text-center justify-center mt-5 sm:mt-8 font-poppains font-normal text-base sm:text-xl text-gray">Copyright &copy; 2024
+                John Doe. All Rights Reserved.</span>
+        </div>
+    </section>
+    <!-- ================ Footer area end ============ -->
+    <!-- ================ Navbar area end ============ -->
+</body>
+
+</html>
